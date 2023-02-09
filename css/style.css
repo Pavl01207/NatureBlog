@@ -1,0 +1,11 @@
+@import url("reset.css");
+/*-----common element-----*/
+@import url("common.css");
+/*-----header------*/
+@import url("header.css");
+/*----footer----------*/
+@import url("footer.css");
+/*----homepage------*/
+@import url("homepage.css");
+/*----article------*/
+@import url("article.css");

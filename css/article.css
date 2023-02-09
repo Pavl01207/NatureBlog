@@ -1,0 +1,126 @@
+.article__big-post {}
+/*---------------------*/
+.article__content {
+	padding: 6.25rem 0;
+	background: #fff;
+}
+.article__container {
+	display: grid;
+	align-items: start;
+	gap: 1.25rem;
+	grid-template-columns: 12.5rem 1fr 12.5rem;
+}
+.article__info {
+	display: flex;
+	gap: .4375rem;
+	align-items: center;
+	font-weight: 700;
+	font-size: .75rem;
+	line-height: 2.1; /* 25/12 */
+	color: #495057;
+}
+.article__date {
+	display: flex;
+	gap: .4375rem;
+	align-items: center;
+}
+.article__date::after {
+	content: "";
+	height: .0625rem;
+	background-color: #C4C4C4;
+	width: 2.1875rem;
+}
+.article__time {
+}
+.article__body {
+	display: grid;
+	gap: 3.125rem;
+}
+.article__text {
+	display: grid;
+	gap: 1.875rem;
+	font-size: .875rem;
+	line-height: 1.78; /* 25/14 */
+	color: #495057;
+}
+.article__text blockquote {
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 1.3; /* 46/36 */
+	color: #D4A373;
+}
+.article__tags {
+	display: flex;
+	gap: .75rem;
+	align-items: center;
+	border-bottom: 0.5px solid #C4C4C4;
+	padding-bottom: 3.125rem;
+}
+.article__tag {
+	flex-wrap: wrap;
+	border: 1px solid #E5E5E5;
+	border-radius: .3125rem;
+	color: #6C757D;
+}
+.article__tag:hover {
+	background-color: #C4C4C4;
+}
+.article__author {
+}
+.author {
+	display: flex;
+	gap: 1.0625rem;
+}
+.author__avatar {
+	flex: 0 0 3.125rem;
+	height: 3.125rem;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.author__body {
+	display: grid;
+	align-self: center;
+	font-size: .75rem;	
+}
+.author__title {
+	font-weight: 700;
+	color: #343A40;
+}
+.author__title:hover {
+	text-decoration: underline;
+}
+.author__skills {
+	color: #6C757D;
+}
+@media (max-width: 991.98px) {
+	.article__content {
+		padding: 4.375rem 0;
+	}
+	.article__container {
+		grid-template-columns: 12.5rem 1fr;
+	}
+	.article__body {
+		gap: 1.25rem;
+	}
+	.article__tags {
+		padding-bottom: 1.25rem;
+	}
+	.article__text {
+		gap: .9375rem;
+	}
+	.article__text blockquote {
+		font-size: 1.5rem;
+	}
+}
+@media (max-width: 767.98px) {
+	.article__content {
+		padding: 3.125rem 0;
+	}
+	.article__container {
+		grid-template-columns: auto;
+	}
+}
+/*---------------------*/
+.article__related {
+	background: rgba(229, 229, 229, 0.3);
+}
